@@ -29,3 +29,11 @@ bun run preview
 ```sh
 bun run typecheck
 ```
+
+## 公開部署
+
+網站使用 Vercel 部署，Vercel 連接 GitHub `main` 分支後會在每次推送時自動重新建置。部署設定由根目錄的 `vercel.json` 管理：
+
+- Build command：`npm run build`
+- Output directory：`dist`
+- Production branch：`main`
